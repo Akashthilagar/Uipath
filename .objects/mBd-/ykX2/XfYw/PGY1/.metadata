@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Email Input",
+  "Description": "Text input labelled Email in the challenge form",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "PGY13H1D-0eIVo64UnVuHw",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/PGY13H1D-0eIVo64UnVuHw",
+  "ParentRef": "21V0ZLLCikWAOIOwvkkYmw/XfYwb_7h60KeNNLtKnKqEA",
+  "Created": "2026-10-19T09:13:44.0068281Z",
+  "Updated": "2026-10-19T09:13:44.0068281Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

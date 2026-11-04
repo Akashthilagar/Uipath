@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Input Form",
+  "Description": "The Input Forms challenge page of rpachallenge.com with Start button and the 7-field form",
+  "Type": "Screen",
+  "Id": "XfYwb_7h60KeNNLtKnKqEA",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/XfYwb_7h60KeNNLtKnKqEA",
+  "ParentRef": "21V0ZLLCikWAOIOwvkkYmw/ykX2_OTpsEy8Opl7ZL6-Iw",
+  "Created": "2026-10-19T09:12:11.3258322Z",
+  "Updated": "2026-10-19T09:12:11.3258322Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

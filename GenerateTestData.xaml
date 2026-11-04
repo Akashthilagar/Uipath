@@ -1,0 +1,176 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GenerateTestData" this:GenerateTestData.in_TestDataPath="Data\TestData.xlsx" VisualBasic.Settings="{x:Null}" xmlns:this="clr-namespace:" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_TestDataPath" Type="InArgument(x:String)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+  </x:Members>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Generate RPA Challenge Test Data" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable(&quot;TestData&quot;)]" Name="dt_TestData" />
+    </Sequence.Variables>
+    <Sequence DisplayName="Create Columns" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <InvokeMethod DisplayName="Add Column First Name" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sd:DataColumnCollection">[dt_TestData.Columns]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">First Name</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Add Column Last Name" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sd:DataColumnCollection">[dt_TestData.Columns]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Last Name</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Add Column Company Name" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sd:DataColumnCollection">[dt_TestData.Columns]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Company Name</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Add Column Role in Company" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sd:DataColumnCollection">[dt_TestData.Columns]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Role in Company</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Add Column Address" sap2010:WorkflowViewState.IdRef="InvokeMethod_5" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sd:DataColumnCollection">[dt_TestData.Columns]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Address</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Add Column Email" sap2010:WorkflowViewState.IdRef="InvokeMethod_6" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sd:DataColumnCollection">[dt_TestData.Columns]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Email</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Add Column Phone Number" sap2010:WorkflowViewState.IdRef="InvokeMethod_7" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sd:DataColumnCollection">[dt_TestData.Columns]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Phone Number</InArgument>
+      </InvokeMethod>
+    </Sequence>
+    <Sequence DisplayName="Add Test Rows" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <ui:AddDataRow DisplayName="Add Row 1 (Liam Carter)" sap2010:WorkflowViewState.IdRef="AddDataRow_1" ArrayRow="[New Object() {&quot;Liam&quot;, &quot;Carter&quot;, &quot;Northwind Traders&quot;, &quot;Sales Manager&quot;, &quot;12 Harbor Lane, Springfield&quot;, &quot;liam.carter@northwind.example.com&quot;, &quot;4155550101&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 2 (Olivia Bennett)" sap2010:WorkflowViewState.IdRef="AddDataRow_2" ArrayRow="[New Object() {&quot;Olivia&quot;, &quot;Bennett&quot;, &quot;Contoso Ltd&quot;, &quot;Software Engineer&quot;, &quot;48 Maple Street, Riverton&quot;, &quot;olivia.bennett@contoso.example.com&quot;, &quot;4155550102&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 3 (Noah Ramirez)" sap2010:WorkflowViewState.IdRef="AddDataRow_3" ArrayRow="[New Object() {&quot;Noah&quot;, &quot;Ramirez&quot;, &quot;Fabrikam Inc&quot;, &quot;Accountant&quot;, &quot;7 Oak Avenue, Lakeside&quot;, &quot;noah.ramirez@fabrikam.example.com&quot;, &quot;4155550103&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 4 (Emma Thompson)" sap2010:WorkflowViewState.IdRef="AddDataRow_4" ArrayRow="[New Object() {&quot;Emma&quot;, &quot;Thompson&quot;, &quot;Adventure Works&quot;, &quot;Marketing Lead&quot;, &quot;230 Pine Road, Fairview&quot;, &quot;emma.thompson@adventureworks.example.com&quot;, &quot;4155550104&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 5 (Ethan Nguyen)" sap2010:WorkflowViewState.IdRef="AddDataRow_5" ArrayRow="[New Object() {&quot;Ethan&quot;, &quot;Nguyen&quot;, &quot;Tailspin Toys&quot;, &quot;Product Owner&quot;, &quot;91 Cedar Court, Brookfield&quot;, &quot;ethan.nguyen@tailspin.example.com&quot;, &quot;4155550105&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 6 (Ava Patel)" sap2010:WorkflowViewState.IdRef="AddDataRow_6" ArrayRow="[New Object() {&quot;Ava&quot;, &quot;Patel&quot;, &quot;Wingtip Solutions&quot;, &quot;HR Specialist&quot;, &quot;5 Birch Boulevard, Clearwater&quot;, &quot;ava.patel@wingtip.example.com&quot;, &quot;4155550106&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 7 (Mason Okafor)" sap2010:WorkflowViewState.IdRef="AddDataRow_7" ArrayRow="[New Object() {&quot;Mason&quot;, &quot;Okafor&quot;, &quot;Litware Systems&quot;, &quot;IT Administrator&quot;, &quot;66 Elm Drive, Greenville&quot;, &quot;mason.okafor@litware.example.com&quot;, &quot;4155550107&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 8 (Sophia Rossi)" sap2010:WorkflowViewState.IdRef="AddDataRow_8" ArrayRow="[New Object() {&quot;Sophia&quot;, &quot;Rossi&quot;, &quot;Proseware Group&quot;, &quot;Business Analyst&quot;, &quot;14 Willow Way, Ashford&quot;, &quot;sophia.rossi@proseware.example.com&quot;, &quot;4155550108&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 9 (Lucas Schmidt)" sap2010:WorkflowViewState.IdRef="AddDataRow_9" ArrayRow="[New Object() {&quot;Lucas&quot;, &quot;Schmidt&quot;, &quot;Coho Logistics&quot;, &quot;Operations Director&quot;, &quot;302 Spruce Lane, Kingsport&quot;, &quot;lucas.schmidt@coho.example.com&quot;, &quot;4155550109&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+      <ui:AddDataRow DisplayName="Add Row 10 (Mia Tanaka)" sap2010:WorkflowViewState.IdRef="AddDataRow_10" ArrayRow="[New Object() {&quot;Mia&quot;, &quot;Tanaka&quot;, &quot;Fourth Coffee&quot;, &quot;Customer Success Manager&quot;, &quot;8 Aspen Place, Westbrook&quot;, &quot;mia.tanaka@fourthcoffee.example.com&quot;, &quot;4155550110&quot;}]">
+        <ui:AddDataRow.DataTable>
+          <InOutArgument x:TypeArguments="sd:DataTable">[dt_TestData]</InOutArgument>
+        </ui:AddDataRow.DataTable>
+      </ui:AddDataRow>
+    </Sequence>
+    <ui:WriteRange AddHeaders="True" DisplayName="Write Range Workbook (Test Data)" sap2010:WorkflowViewState.IdRef="WriteRange_1" WorkbookPath="[in_TestDataPath]" SheetName="[&quot;Sheet1&quot;]" StartingCell="[&quot;A1&quot;]" DataTable="[dt_TestData]" />
+    <ui:LogMessage Level="Info" DisplayName="Log Test Data Written" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <VisualBasicValue x:TypeArguments="x:Object" ExpressionText="$&quot;Wrote {dt_TestData.Rows.Count} test rows to {in_TestDataPath}&quot;" />
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>

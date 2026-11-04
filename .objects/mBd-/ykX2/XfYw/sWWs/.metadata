@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Company Name Input",
+  "Description": "Text input labelled Company Name in the challenge form",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "sWWswQCarU2-oVTKk-Ea2A",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/sWWswQCarU2-oVTKk-Ea2A",
+  "ParentRef": "21V0ZLLCikWAOIOwvkkYmw/XfYwb_7h60KeNNLtKnKqEA",
+  "Created": "2026-10-19T09:13:43.791383Z",
+  "Updated": "2026-10-19T09:13:43.791383Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

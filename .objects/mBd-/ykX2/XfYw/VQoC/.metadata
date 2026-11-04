@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Address Input",
+  "Description": "Text input labelled Address in the challenge form",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "VQoCA17FVEGj0t2UkumNhw",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/VQoCA17FVEGj0t2UkumNhw",
+  "ParentRef": "21V0ZLLCikWAOIOwvkkYmw/XfYwb_7h60KeNNLtKnKqEA",
+  "Created": "2026-10-19T09:13:43.9640775Z",
+  "Updated": "2026-10-19T09:13:43.9640775Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

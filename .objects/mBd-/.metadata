@@ -1,0 +1,13 @@
+﻿{
+  "Name": "RPA Challenge",
+  "Description": "rpachallenge.com input forms challenge web app",
+  "Type": "App",
+  "Id": "mBd-ImSCskGSzWp06im6hA",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/mBd-ImSCskGSzWp06im6hA",
+  "Created": "2026-10-19T09:12:00.2451717Z",
+  "Updated": "2026-10-19T09:12:00.2451717Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

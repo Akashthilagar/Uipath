@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Role In Company Input",
+  "Description": "Text input labelled Role in Company in the challenge form",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "zkpQAB0BOkibVVv_ap3rLg",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/zkpQAB0BOkibVVv_ap3rLg",
+  "ParentRef": "21V0ZLLCikWAOIOwvkkYmw/XfYwb_7h60KeNNLtKnKqEA",
+  "Created": "2026-10-19T09:13:43.9094779Z",
+  "Updated": "2026-10-19T09:13:43.9094779Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

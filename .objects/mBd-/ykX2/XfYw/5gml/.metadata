@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Phone Number Input",
+  "Description": "Text input labelled Phone Number in the challenge form",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "5gmlDd0YBkyarMcBEAY14w",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/5gmlDd0YBkyarMcBEAY14w",
+  "ParentRef": "21V0ZLLCikWAOIOwvkkYmw/XfYwb_7h60KeNNLtKnKqEA",
+  "Created": "2026-10-19T09:13:44.0491191Z",
+  "Updated": "2026-10-19T09:13:44.0491191Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

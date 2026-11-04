@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Last Name Input",
+  "Description": "Text input labelled Last Name in the challenge form",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "5bUuR87wEkmu75CqqGxRRg",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/5bUuR87wEkmu75CqqGxRRg",
+  "ParentRef": "21V0ZLLCikWAOIOwvkkYmw/XfYwb_7h60KeNNLtKnKqEA",
+  "Created": "2026-10-19T09:13:43.7448014Z",
+  "Updated": "2026-10-19T09:13:43.7448014Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

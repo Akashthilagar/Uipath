@@ -1,0 +1,6 @@
+{
+  "Name": "RPAChallange_Claude",
+  "ProjectType": "Process",
+  "Description": "Using claude to create and workflow and publish it in the orchestrator\r\n",
+  "MainFile": "Main.xaml"
+}

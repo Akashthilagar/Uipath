@@ -1,0 +1,21 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "7e24ba2e-b870-49f3-ba35-ce3d08efcbda",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "in_TestDataPath": {
+            "type": "string",
+            "x-default-expression": "\"Data\\TestData.xlsx\"",
+            "default": "Data\\TestData.xlsx"
+          }
+        },
+        "required": []
+      }
+    }
+  ]
+}

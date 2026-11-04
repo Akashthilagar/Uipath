@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Submit Button",
+  "Description": "Submit button below the challenge form fields",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "jNBjZaAiVUy3kVluU3wiWQ",
+  "Reference": "21V0ZLLCikWAOIOwvkkYmw/jNBjZaAiVUy3kVluU3wiWQ",
+  "ParentRef": "21V0ZLLCikWAOIOwvkkYmw/XfYwb_7h60KeNNLtKnKqEA",
+  "Created": "2026-10-19T09:13:44.1054964Z",
+  "Updated": "2026-10-19T09:13:44.1054964Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
